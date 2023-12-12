@@ -109,6 +109,8 @@
   line-height: normal;
   text-decoration: underline;
   text-align: center;
+  background: transparent;
+  border: none;
 }
 .otp_box .resdiv:disabled {
  cursor: not-allowed;
@@ -126,9 +128,11 @@
   height: 75vh;
   max-height: 800px;
   overflow-y: scroll;
+  padding-bottom: 120px;
 }
 .tableContent thead tr th:first-child {
   width: 40%;
+  
 }
 .tableContent thead tr th {
   padding-bottom: 15px;
@@ -377,6 +381,12 @@
   font-weight: 400;
   line-height: 22px;
   padding: 10px 0px;
+}
+.details{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
 }
 .icons {
   display: flex;

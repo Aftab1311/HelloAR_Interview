@@ -19,12 +19,16 @@ const MediaPlayer = ({playing, songs}) => {
           return item.name === playing;
         })
       );
-      setCurrentSong(songs[currentSongIndex]);
       setSongControls(true);
       setIsPlaying(true);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [playing]);
+
+  useEffect(() => {
+    setCurrentSong(songs[currentSongIndex]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSongIndex]);
 
   const playPauseToggle = () => {
     setIsPlaying(!isPlaying);
